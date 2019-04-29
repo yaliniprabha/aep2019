@@ -23,7 +23,7 @@ public class Point {
         return Math.abs(this.xPosition - other.yPosition);
     }
     
-    public int calc_euc_dist(Point other) {
+    public double calc_euc_dist(Point other) {
         return Math.sqrt(Math.pow((this.xPosition - other.xPosition), 2) + Math.pow((this.xPosition - other.xPosition), 2));
         
     }
