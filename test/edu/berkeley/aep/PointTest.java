@@ -44,4 +44,11 @@ public class PointTest {
         assertEquals(0, pointA.calc_manh_dist(pointA));
     }
     
+    @Test
+    public void manhDistanceBetweenPointAtSixNegThreeAndFourTwoShouldBeZero() {
+        var pointA = new Point(6, -3);
+        var pointB = new Point(4, 2);
+        assertEquals(11, pointA.calc_manh_dist(pointB));
+    }
+    
 }
