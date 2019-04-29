@@ -33,7 +33,7 @@ public class Point {
          if (p == 2) {
              return this.calc_euc_dist(other);
          }
-         return Math.pow(Math.pow((this.xPosition - other.xPosition), p) + Math.pow((this.yPosition - other.yPosition), p), (1/3));
+         return Math.pow(Math.pow((this.xPosition - other.xPosition), p) + Math.pow((this.yPosition - other.yPosition), p), (double) 1/3);
         
     }
     
