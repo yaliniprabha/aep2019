@@ -55,7 +55,7 @@ public class PointTest {
     public void minkDistanceBetweenPointAtFourThreeAndThreeOneShouldBeZero() {
         var pointA = new Point(4, 3);
         var pointB = new Point(3, 1);
-        assertEquals(Math.sqrt(5), pointA.calc_mink_dist(pointB, 3), 0.1);
+        assertEquals(Math.cbrt(9), pointA.calc_mink_dist(pointB, 3), 0.1);
     }
     
      @Test
