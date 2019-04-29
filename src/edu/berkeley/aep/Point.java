@@ -29,10 +29,10 @@ public class Point {
         
     }
     
-    public double calc_cos_sim(Point other) {
-        double dotProduct = (this.xPosition * other.xPosition) + (this.yPosition * other.yPosition);
-        double normA = Math.pow(this.xPosition, 2) + Math.pow(this.yPosition, 2);
-        double normB = Math.pow(other.xPosition, 2) + Math.pow(other.yPosition, 2);
-        return dotProduct / (Math.sqrt(normA) * Math.sqrt(normB));
-    }
+//     public double calc_cos_sim(Point other) {
+//         double dotProduct = (this.xPosition * other.xPosition) + (this.yPosition * other.yPosition);
+//         double normA = Math.pow(this.xPosition, 2) + Math.pow(this.yPosition, 2);
+//         double normB = Math.pow(other.xPosition, 2) + Math.pow(other.yPosition, 2);
+//         return dotProduct / (Math.sqrt(normA) * Math.sqrt(normB));
+//     }
 }
