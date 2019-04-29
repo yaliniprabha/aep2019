@@ -6,23 +6,20 @@ import java.util.Map;
 // Understands a four-sided figure with four right angles
 public class Rectangle {
 
-    public final int length;
-    public final int width;
+     private final int quantity;
+    private final int width;
 
     public static Rectangle createSquare(int side) {
         return new Rectangle(side, side);
     }
 
-    public Rectangle(int length, int width) {
-        this.length = length;
+    public Rectangle(int quantity, int width) {
+
+        this.quantity = quantity;
         this.width = width;
     }
 
-    protected int area() {
-        return length * width;
-    }
-
-    public int perimeter() {
-        return 2 * length + 2 * width;
+    public int calc_area() {
+        return quantity * width;
     }
 }
