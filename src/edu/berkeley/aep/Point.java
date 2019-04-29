@@ -24,7 +24,7 @@ public class Point {
     }
     
     public double calc_euc_dist(Point other) {
-        return Math.sqrt(Math.pow((this.xPosition - other.xPosition), 2) + Math.pow((this.xPosition - other.xPosition), 2));
+        return Math.sqrt(Math.pow((this.xPosition - other.xPosition), 2) + Math.pow((this.yPosition - other.yPosition), 2));
         
     }
 }
