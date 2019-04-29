@@ -61,7 +61,7 @@ public class PointTest {
     public void cosSimilarityBetweenPointAtFourTwoAndEightThreeShouldBeZero() {
         var pointA = new Point(4, 2);
         var pointB = new Point(8, 3);
-        assertEquals(2.9, pointA.calc_cos_sim(pointA), 0.1);
+        assertEquals(2.9, pointA.calc_cos_sim(pointB), 0.1);
     }
     
 }
