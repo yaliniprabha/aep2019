@@ -28,4 +28,9 @@ public class Point {
         return Math.sqrt(Math.pow((this.xPosition - other.xPosition), 2) + Math.pow((this.yPosition - other.yPosition), 2));
         
     }
+    
+    public double calc_manh_dist(Point other) {
+        return Math.abs(this.xPosition - other.xPosition) + Math.abs(this.yPosition - other.yPosition);
+        
+    }
 }
