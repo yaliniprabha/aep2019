@@ -12,7 +12,7 @@ public class Point {
      
     public Point(int xpos) {
         this.xPosition = xpos;
-        this.yPosition = null;
+        this.yPosition = 0;
     }
     
     public Point(int xpos, int ypos) {
@@ -21,7 +21,7 @@ public class Point {
     }
 
     public int calc_dist(Point other) {
-        return Math.abs(this.xPosition - other.yPosition);
+        return Math.abs(this.xPosition - other.xPosition);
     }
     
     public double calc_euc_dist(Point other) {
