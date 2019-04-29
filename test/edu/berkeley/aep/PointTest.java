@@ -28,7 +28,7 @@ public class PointTest {
     @Test
     public void eucDistanceBetweenPointAtFourTwoAndItselfShouldBeZero() {
         var pointA = new Point(4, 2);
-        assertEquals(0.0, pointA.calc_euc_dist(pointA));
+        assertEquals(0.0, pointA.calc_euc_dist(pointA), 0.1);
     }
     
 }
