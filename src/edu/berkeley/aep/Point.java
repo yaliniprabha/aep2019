@@ -29,7 +29,7 @@ public class Point {
         
     }
     
-    public double calc_manh_dist(Point other) {
+    public int calc_manh_dist(Point other) {
         return Math.abs(this.xPosition - other.xPosition) + Math.abs(this.yPosition - other.yPosition);
         
     }
