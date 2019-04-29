@@ -31,11 +31,17 @@ public class PointTest {
         assertEquals(0.0, pointA.calc_euc_dist(pointA), 0.1);
     }
     
-     @Test
+    @Test
     public void eucDistanceBetweenPointAtFourThreeAndThreeOneShouldBeZero() {
         var pointA = new Point(4, 3);
         var pointB = new Point(3, 1);
         assertEquals(Math.sqrt(5), pointA.calc_euc_dist(pointB), 0.1);
+    }
+    
+    @Test
+    public void manhDistanceBetweenPointAtFourTwoAndItselfShouldBeZero() {
+        var pointA = new Point(4, 2);
+        assertEquals(0, pointA.calc_manh_dist(pointA));
     }
     
 }
