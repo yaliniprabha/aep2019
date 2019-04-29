@@ -32,7 +32,7 @@ public class PointTest {
     }
     
     @Test
-    public void eucDistanceBetweenPointAtFourThreeAndThreeOneShouldBeZero() {
+    public void eucDistanceBetweenPointAtFourThreeAndThreeOneShouldBeRootOfFive() {
         var pointA = new Point(4, 3);
         var pointB = new Point(3, 1);
         assertEquals(Math.sqrt(5), pointA.calc_euc_dist(pointB), 0.1);
@@ -45,20 +45,27 @@ public class PointTest {
     }
     
     @Test
-    public void manhDistanceBetweenPointAtSixNegThreeAndFourTwoShouldBeZero() {
+    public void manhDistanceBetweenPointAtSixNegThreeAndFourTwoShouldBeSeven() {
         var pointA = new Point(6, -3);
         var pointB = new Point(4, 2);
         assertEquals(7, pointA.calc_manh_dist(pointB));
     }
     
+    @Test
+    public void minkDistanceBetweenPointAtFourThreeAndThreeOneShouldBeZero() {
+        var pointA = new Point(4, 3);
+        var pointB = new Point(3, 1);
+        assertEquals(Math.sqrt(5), pointA.calc_mink_dist(pointB, 3), 0.1);
+    }
+    
      @Test
-    public void cosSimilarityBetweenPointAtFourTwoAndItselfShouldBeZero() {
+    public void cosSimilarityBetweenPointAtFourTwoAndItselfShouldBeOne() {
         var pointA = new Point(4, 2);
         assertEquals(1.0, pointA.calc_cos_sim(pointA), 0.01);
     }
     
      @Test
-    public void cosSimilarityBetweenPointAtFourTwoAndEightThreeShouldBeZero() {
+    public void cosSimilarityBetweenPointAtFourTwoAndEightThreeShouldBePointNineNine() {
         var pointA = new Point(4, 2);
         var pointB = new Point(8, 3);
         assertEquals(0.994, pointA.calc_cos_sim(pointB), 0.01);
