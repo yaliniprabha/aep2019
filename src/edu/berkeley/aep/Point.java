@@ -12,6 +12,7 @@ public class Point {
      
     public Point(int xpos) {
         this.xPosition = xpos;
+        this.yPosition = null;
     }
     
     public Point(int xpos, int ypos) {
