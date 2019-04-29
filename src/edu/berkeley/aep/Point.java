@@ -20,7 +20,7 @@ public class Point {
     }
 
     public int calc_dist(Point other) {
-        return Math.abs(this.position - other.position);
+        return Math.abs(this.xPosition - other.yPosition);
     }
     
     public int calc_euc_dist(Point other) {
