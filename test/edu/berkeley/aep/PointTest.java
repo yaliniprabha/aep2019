@@ -18,4 +18,11 @@ public class PointTest {
         assertEquals(6, pointA.calc_dist(pointB));
     }
     
+     @Test
+    public void oneDDistanceBetweenPointAtFourAndPointAtNegativeFourShouldBeEight() {
+        var pointA = new Point(4);
+        var pointB = new Point(-4);
+        assertEquals(8, pointA.calc_dist(pointB));
+    }
+    
 }
