@@ -29,6 +29,12 @@ public class Point {
         
     }
     
+     public double calc_mink_dist(Point other, int p) {
+         if (p == 2) return self.calc_euc_dist(other);
+         return Math.pow(Math.pow((this.xPosition - other.xPosition), p) + Math.pow((this.yPosition - other.yPosition), p), 1/3);
+        
+    }
+    
     public int calc_manh_dist(Point other) {
         return Math.abs(this.xPosition - other.xPosition) + Math.abs(this.yPosition - other.yPosition);
     }
